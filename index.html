@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Feedback Modal Component - FrontendPro Challenge</title>
+  </head>
+  <body>
+    <!-- Write your HTML here -->
+
+      <div class="container">
+        <button id="openModalBtn" class="open-modal">Give Feedback</button>
+        <div id="message" class="message"></div>
+      </div>
+  
+      <div id="modal" class="modal hidden">
+        <div class="modal-content">
+          <button id="closeBtn" class="close-btn">&times;</button>
+          <h2>Give Teach to Give a Feedback.</h2>
+  
+          <div class="rating-buttons">
+            <!-- Rating buttons-->
+            <div class="ratings">
+              <button class="rating-btn">1</button>
+              <button class="rating-btn">2</button>
+              <button class="rating-btn">3</button>
+              <button class="rating-btn">4</button>
+              <button class="rating-btn">5</button>
+              <button class="rating-btn">6</button>
+              <button class="rating-btn">7</button>
+              <button class="rating-btn">8</button>
+              <button class="rating-btn">9</button>
+              <button class="rating-btn">10</button>
+            </div>
+            <div class="labels-container">
+              <span class="label left">Poor</span>
+              <span class="label right">Excellent</span>
+            </div>
+          </div>
+  
+      <div class="modal-actions">
+        <button id="cancelBtn" class="cancel">Cancel</button>
+        <button id="submitBtn" class="submit">Submit</button>
+      </div>
+        </div>
+      </div>  
+    
+    <script src="/src/script.js"></script>
+  </body>
+</html>

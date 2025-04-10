@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* write your CSS here */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.message {
+  margin-top: 20px;
+  color: #333;
+  font-size: 16px;
+  display: none;
+}
+
+.message.show {
+  display: block;
+}
+
+.open-modal {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.open-modal:hover {
+  background-color: #555;
+}
+
+/* Modal Overlay */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Modal Box */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 400px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.rating-buttons {
+  margin: 20px 0;
+}
+
+.ratings {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.labels-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.label {
+  font-size: 12px;
+  color: #555;
+}
+
+.rating-btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.rating-btn.selected {
+  background-color: #333;
+  color: white;
+}
+
+.modal-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.submit {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #555;
+}
