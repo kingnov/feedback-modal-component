@@ -7,7 +7,7 @@
 /* write your CSS here */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #8cf0f0;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -30,7 +30,7 @@ body {
 }
 
 .open-modal {
-  background-color: #333;
+  background-color: #3a1111;
   color: white;
   border: none;
   border-radius: 4px;
@@ -67,11 +67,11 @@ h2 {
 
 /* Modal Box */
 .modal-content {
-  background-color: white;
+  background-color: rgb(94, 180, 54);
   padding: 20px;
   border-radius: 5px;
   text-align: center;
-  width: 400px;
+  width: 500px;
   position: relative;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
